@@ -7,6 +7,8 @@ git add .
 
 git commit -m "Initial mail demo app with env-based credentials"
 
+Giuhubでリポジトリ作成
+
 git remote -v
 origin  git@github.com:shota-sato/demomail.git (fetch)
 origin  git@github.com:shota-sato/demomail.git (push)
