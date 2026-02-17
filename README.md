@@ -33,8 +33,21 @@ Gmailがメールを送る
 
 # 学んだことメモ
 
+## spring-boot-starter-mail
+メール送信機能一式をまとめて追加するパック
+```
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-mail</artifactId>
+</dependency>
+```
+ - Jakarta Mail（旧JavaMail）が自動で入る
+ - JavaMailSender が自動でBean登録される
+ - application.yml の mail 設定が有効になる
+
+
 ## JavaMailSender
-Spring が用意してくれている「メールを送るためのエンジン」
+メール送信用インターフェース
  - SMTPサーバーに接続
  - 認証
  - メールを組み立て
