@@ -29,9 +29,30 @@ mailSender.send(...)
 smtp.gmail.com:587
     ↓
 Gmailがメールを送る
+
+
+@RestController
+@RequestMapping("/mail")
+      ↓
+@PostMapping("/send")
+      ↓
+最終URL = /mail/send
+
 ```
 
 # 学んだことメモ
+
+## RestController
+| 種類  | アノテーション         | 戻り値        |
+| --- | --------------- | ---------- |
+| API | @RestController | JSON       |
+| Web | @Controller     | HTMLテンプレート |
+これを付けると
+ - 文字列の場合 → その文字列がレスポンス本文 
+ - オブジェクトの場合 → JSONに変換されてレスポンス本文
+
+
+
 
 ## spring-boot-starter-mail
 メール送信機能一式をまとめて追加するパック
